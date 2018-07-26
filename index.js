@@ -5,6 +5,7 @@ var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
+  //res.sendFile(__dirname + '/map.html');
 });
 
 io.on('connection', function(socket){
