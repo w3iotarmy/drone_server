@@ -59,7 +59,7 @@
           return false;
         });
         socket.on('chat message', function(msg){
-          $('#messages').append($('<li>').text(msg));
+          $('#messages').append($('').text(msg));
           document.getElementById("messages").style.visibility = "hidden";
           var obj = JSON.parse(msg);
           if(obj.u=="eagle"){
@@ -73,6 +73,7 @@
                     var latLng = new google.maps.LatLng(latA,lngA);
                     var marker = new google.maps.Marker({
                       position: latLng,
+                      icon: iconBase + 'quad-icon',
                       map: map
                     });
                     /*icon: iconBase + 'quad-icon',*/
