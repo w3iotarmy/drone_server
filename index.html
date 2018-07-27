@@ -15,12 +15,19 @@
     </style>
   </head>
   <body>
+    <div class="container">
+      <h1>PubNub Google Maps Tutorial - Live Map Marker</h1>
+      <div id="map-canvas" style="width:600px;height:400px"></div>
+    </div>
     <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
     <script>
       $(function () {
         var socket = io();
@@ -41,14 +48,6 @@
           window.scrollTo(0, document.body.scrollHeight);
         });
       });
-/*function startFunction() {
-	var socket = io();
-         socket.emit('chat message','420:420:307:420:307:307:307:307:0');  // The function returns the product of p1 and p2
-}
-	var interval = setInterval(startFunction, 200);
-		setTimeout(function() {
-    			clearInterval(interval)
-		}, 2000);*/
     </script>
   </body>
 </html>
