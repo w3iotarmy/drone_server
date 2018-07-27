@@ -64,7 +64,7 @@
                     center: new google.maps.LatLng(lat,lng),
                     mapTypeId: 'terrain'
                   });*/
-                  map.center = new new google.maps.LatLng(lat,lng);
+                   map.panTo(new google.maps.LatLng(lat,lng));
                   var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                       position: latLng,
