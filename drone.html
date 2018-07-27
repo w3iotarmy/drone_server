@@ -31,7 +31,7 @@
       var lng=0.00;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 20,
+          zoom: 17,
           center: new google.maps.LatLng(lat,lng),
           mapTypeId: 'terrain'
         });
@@ -44,6 +44,7 @@
 
     </script>
     <script>
+      map.setMapTypeId('satellite');
       $(function () {
         var socket = io();
         $('form').submit(function(){
@@ -60,7 +61,7 @@
                     lat = obj.lat;
                     lng = obj.lng;
                     map.panTo(new google.maps.LatLng(lat,lng));
-                    map.setMapTypeId('satellite');
+
                     var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                       position: latLng,
