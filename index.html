@@ -27,6 +27,8 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       var map;
+      var lat=0.00;
+      var lng=0.00;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
@@ -44,7 +46,14 @@
 
       // Loop through the results array and place a marker for each
       // set of coordinates.3
+      window.eqfeed_callback = function(results) {
 
+                    var latLng = new google.maps.LatLng(lat,lng);
+                    var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map
+                    });
+                  }
       /*window.eqfeed_callback = function(results) {
         for (var i = 0; i < results.features.length; i++) {
           var coords = results.features[i].geometry.coordinates;
@@ -71,18 +80,8 @@
           if(obj.u=="eagle"){
               if(obj.action=="location")
               {
-                  var lat = obj.lat;
-                  var lng = obj.lng;
-                  window.eqfeed_callback = function(results) {
-                    lat=22.821667;
-                    lng=89.551869;
-                    var latLng = new google.maps.LatLng(lat,lng);
-                    var marker = new google.maps.Marker({
-                    position: latLng,
-                    map: map
-                    });
-                  }
-
+                   lat = obj.lat;
+                   lng = obj.lng;
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
