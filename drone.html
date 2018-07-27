@@ -35,11 +35,12 @@
           center: new google.maps.LatLng(lat,lng),
           mapTypeId: 'terrain'
         });
-        map.setMapTypeId('satellite');
+
         var script = document.createElement('script');
         script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
         document.getElementsByTagName('head')[0].appendChild(script);
       }
+      map.setMapTypeId('satellite');
       window.eqfeed_callback = function(results) {
 
       }
