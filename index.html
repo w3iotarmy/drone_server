@@ -38,13 +38,7 @@
               {
                   var lat = obj.lat;
                   var lng = obj.lng;
-                  window.eqfeed_callback = function(results) {
-                    var latLng = new google.maps.LatLng(lat,lng);
-                    var marker = new google.maps.Marker({
-                    position: latLng,
-                    map: map
-                  });
-                }
+
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
@@ -82,7 +76,16 @@
       }
 
       // Loop through the results array and place a marker for each
-      // set of coordinates.
+      // set of coordinates.3
+      window.eqfeed_callback = function(results) {
+                    lat=22.821667;
+                    lng=89.551869;
+                    var latLng = new google.maps.LatLng(lat,lng);
+                    var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map
+                    });
+                  }
       /*window.eqfeed_callback = function(results) {
         for (var i = 0; i < results.features.length; i++) {
           var coords = results.features[i].geometry.coordinates;
