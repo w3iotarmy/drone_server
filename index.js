@@ -12,7 +12,7 @@ app.get('/drone', function(req, res){
   //res.sendFile(__dirname + '/map.html');
 });
 app.get('/quad-icon', function(req, res){
-  res.sendFile(__dirname + '/quad.png');
+  res.sendFile(__dirname + '/copter.png');
   //res.sendFile(__dirname + '/map.html');
 });
 io.on('connection', function(socket){

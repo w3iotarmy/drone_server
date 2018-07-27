@@ -67,14 +67,15 @@
                     lngA = obj.lng;
                     map.panTo(new google.maps.LatLng(latA,lngA));
                     map.setMapTypeId('satellite');
+
                     var latLng = new google.maps.LatLng(latA,lngA);
                     var marker = new google.maps.Marker({
                       position: latLng,
                       icon: iconBase + 'quad-icon',
                       map: map
                     });
-                     var point =new google.maps.LatLng(latA,lngA);
-                     flightPlanCoordinates.push(point);
+                    var point =new google.maps.LatLng(latA,lngA);
+                    flightPlanCoordinates.push(point);
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
