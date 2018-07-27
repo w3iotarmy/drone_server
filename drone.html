@@ -30,6 +30,7 @@
       var map;
       var lat=0.00;
       var lng=0.00;
+      var iconBase = 'http://184.72.95.87:3000/';
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
@@ -69,15 +70,11 @@
                     var latLng = new google.maps.LatLng(latA,lngA);
                     var marker = new google.maps.Marker({
                       position: latLng,
+                      icon: iconBase + 'quad-icon',
                       map: map
                     });
-
-
-
-
                      var point =new google.maps.LatLng(latA,lngA);
                      flightPlanCoordinates.push(point);
-
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
