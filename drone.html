@@ -59,12 +59,13 @@
           return false;
         });
         socket.on('chat message', function(msg){
-          //$('#messages').append($('<li>').text(msg));
+          $('#messages').append($('<li>').text(msg));
           var obj = JSON.parse(msg);
           if(obj.u=="eagle"){
               if(obj.action=="location")
               {
-                    latA = obj.lat;
+                  alert("locat")
+                    /*latA = obj.lat;
                     lngA = obj.lng;
                     map.panTo(new google.maps.LatLng(latA,lngA));
                     map.setMapTypeId('satellite');
@@ -74,7 +75,7 @@
                       position: latLng,
                       map: map
                     });
-                    /*icon: iconBase + 'quad-icon',*/
+                    /!*icon: iconBase + 'quad-icon',*!/
                     var point =new google.maps.LatLng(latA,lngA);
                     flightPlanCoordinates.push(point);
                     var flightPath = new google.maps.Polyline({
@@ -87,7 +88,7 @@
 
                   flightPath.setMap(map);
                    console.log(latA);
-                   console.log(lngA);
+                   console.log(lngA);*/
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
