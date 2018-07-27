@@ -7,7 +7,10 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
   //res.sendFile(__dirname + '/map.html');
 });
-
+app.get('/map', function(req, res){
+  res.sendFile(__dirname + '/map.html');
+  //res.sendFile(__dirname + '/map.html');
+});
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
