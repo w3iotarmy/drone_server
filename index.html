@@ -29,6 +29,10 @@
       var map;
       var lat=0.00;
       var lng=0.00;
+      window.setInterval(function(){
+  /// call your function here
+          initMap()
+      }, 1000);
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
