@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a04307aa-90fb-497b-9618-37bcc28f6324" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/copter.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drone.html" afterPath="$PROJECT_DIR$/drone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +14,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="223">
               <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
@@ -79,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drone.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="drone.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drone.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+            <state relative-caret-position="260">
+              <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -145,8 +143,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/drone.html" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/drone.html" />
       </list>
     </option>
   </component>
@@ -234,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532604004845</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add index file">
-      <created>1532669687476</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1532669687476</updated>
     </task>
     <task id="LOCAL-00020" summary="add index file">
       <created>1532669865838</created>
@@ -578,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532684829222</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add index file">
+      <created>1532685095173</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1532685095173</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -697,18 +695,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drone.html">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/drone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="260">
+          <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="53" />
           <folding />
         </state>
       </provider>

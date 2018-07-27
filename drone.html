@@ -18,7 +18,8 @@
     <div id="map"></div>
     <ul id="messages"></ul>
     <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+      <input id="m" autocomplete="off" />
+        <button>Send</button>
     </form>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8aKsHLmI76zyCD5N2wds0CfFLaKOSDJk&callback=initMap">
@@ -71,9 +72,9 @@
                     var latLng = new google.maps.LatLng(latA,lngA);
                     var marker = new google.maps.Marker({
                       position: latLng,
-                      icon: iconBase + 'quad-icon',
                       map: map
                     });
+                    /*icon: iconBase + 'quad-icon',*/
                     var point =new google.maps.LatLng(latA,lngA);
                     flightPlanCoordinates.push(point);
                     var flightPath = new google.maps.Polyline({
