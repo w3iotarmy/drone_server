@@ -59,11 +59,11 @@
               {
                    lat = obj.lat;
                    lng = obj.lng;
-                   map = new google.maps.Map(document.getElementById('map'), {
+                   /*map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 6,
                     center: new google.maps.LatLng(lat,lng),
                     mapTypeId: 'terrain'
-                  });
+                  });*/
                   var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                       position: latLng,
