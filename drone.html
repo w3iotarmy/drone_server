@@ -63,11 +63,6 @@
         });
         socket.on('chat message', function(msg){
           $('#messages').append($('<li>').text(msg));
-          //document.getElementById("messages").style.visibility = "collapse";
-            /*$(window).focus(function() {
-                console.log('welcome (back)');
-            });*/
-
           var obj = JSON.parse(msg);
           if(obj.u=="eagle"){
               if(obj.action=="location")
@@ -96,7 +91,7 @@
                     flightPath.setMap(map);
 
                    console.log(latA);
-                   //console.log(lngA);
+                   console.log(lngA);
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
