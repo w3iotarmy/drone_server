@@ -47,7 +47,7 @@
 
     </script>
     <script>
-
+       var flightPlanCoordinates=[{"lat":0.00,"lng":0.00}];
       $(function () {
         var socket = io();
         $('form').submit(function(){
@@ -71,11 +71,11 @@
                       map: map
                     });
 
-                    var flightPlanCoordinates=[];
 
-                    flightPlanCoordinates.push({
-                        "lat":lat,"lng":lng,
-                    });
+
+                    flightPlanCoordinates.push({"lat":lat,"lng":lng},
+                    {"lat":lat,"lng":lng}
+                    );
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
