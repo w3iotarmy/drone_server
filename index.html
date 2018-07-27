@@ -30,7 +30,6 @@
       var lat=0.00;
       var lng=0.00;
       window.setInterval(function(){
-  /// call your function here
           initMap()
       }, 1000);
       function initMap() {
@@ -51,7 +50,6 @@
       // Loop through the results array and place a marker for each
       // set of coordinates.3
       window.eqfeed_callback = function(results) {
-
                     var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                     position: latLng,
@@ -86,8 +84,9 @@
               {
                    lat = obj.lat;
                    lng = obj.lng;
-                   Console.write(lat);
-                   Console.write(lng);
+
+                   console.log(lat);
+                   console.log(lng);
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
