@@ -27,7 +27,6 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       var flightPlanCoordinates=[];
-       var i=0;
       var map;
       var lat=0.00;
       var lng=0.00;
@@ -75,22 +74,16 @@
 
 
 
-                    flightPlanCoordinates.push(
-                    {"lat":lat,"lng":lng}
-                    );
-                    console.log(i);
-                    if(i>0)
-                    {
-                        var flightPath = new google.maps.Polyline({
-                          path: flightPlanCoordinates,
-                          geodesic: true,
-                          strokeColor: '#FF0000',
-                          strokeOpacity: 1.0,
-                          strokeWeight: 2
-                        });
-                      flightPath.setMap(map);
-                    }
-                    i++;
+                    flightPlanCoordinates.push({lat: lat, lng: lng})
+                    var flightPath = new google.maps.Polyline({
+                      path: flightPlanCoordinates,
+                      geodesic: true,
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 1.0,
+                      strokeWeight: 2
+                    });
+
+                  flightPath.setMap(map);
                    console.log(lat);
                    console.log(lng);
               }

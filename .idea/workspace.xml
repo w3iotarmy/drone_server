@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a04307aa-90fb-497b-9618-37bcc28f6324" name="Default" comment="add index file">
+    <list default="true" id="a04307aa-90fb-497b-9618-37bcc28f6324" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drone.html" afterPath="$PROJECT_DIR$/drone.html" />
     </list>
@@ -80,8 +80,8 @@
       <file leaf-file-name="drone.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drone.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="163">
+              <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -232,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532604004845</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add index file">
-      <created>1532668285847</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1532668285847</updated>
     </task>
     <task id="LOCAL-00012" summary="add index file">
       <created>1532668834947</created>
@@ -576,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532683612314</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="add index file">
+      <created>1532683687559</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1532683687559</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -705,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="163">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding />
         </state>
       </provider>
