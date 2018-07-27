@@ -31,9 +31,9 @@
       var lng=0.00;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+          zoom: 20,
           center: new google.maps.LatLng(lat,lng),
-          mapTypeId: 'terrain'
+          mapTypeId: google.maps.MapTypeId.HYBRID
         });
         var script = document.createElement('script');
         script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
