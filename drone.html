@@ -40,9 +40,9 @@
         script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
         document.getElementsByTagName('head')[0].appendChild(script);
       }
-      map.setMapTypeId('satellite');
-      window.eqfeed_callback = function(results) {
 
+      window.eqfeed_callback = function(results) {
+          map.setMapTypeId('satellite');
       }
 
     </script>
@@ -64,7 +64,7 @@
                     lat = obj.lat;
                     lng = obj.lng;
                     map.panTo(new google.maps.LatLng(lat,lng));
-
+                    map.setMapTypeId('satellite');
                     var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                       position: latLng,
