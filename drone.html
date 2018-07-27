@@ -71,9 +71,8 @@
                       map: map
                     });
 
-                    var flightPlanCoordinates;
-                    flightPlanCoordinates.push('lat',lat);
-                    flightPlanCoordinates.push('lng',lng);
+                    var flightPlanCoordinates=[];
+                    flightPlanCoordinates.push('"lat":'+lat+',"lng:"'+lng);
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
