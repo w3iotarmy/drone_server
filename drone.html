@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Drone Server</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+      #messages { margin-bottom: 40px }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8aKsHLmI76zyCD5N2wds0CfFLaKOSDJk&callback=initMap">
+    </script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var map;
+      var lat=0.00;
+      var lng=0.00;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: new google.maps.LatLng(lat,lng),
+          mapTypeId: 'terrain'
+        });
+        var script = document.createElement('script');
+        script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+      window.eqfeed_callback = function(results) {
+      }
+
+    </script>
+    <script>
+      $(function () {
+        var socket = io();
+        $('form').submit(function(){
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+          var obj = JSON.parse(msg);
+          if(obj.u=="eagle"){
+              if(obj.action=="location")
+              {
+                    lat = obj.lat;
+                    lng = obj.lng;
+                    map.panTo(new google.maps.LatLng(lat,lng));
+                    var latLng = new google.maps.LatLng(lat,lng);
+                    var marker = new google.maps.Marker({
+                      position: latLng,
+                      map: map
+                    });
+                   console.log(lat);
+                   console.log(lng);
+              }
+          }
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+      });
+    </script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
+  </body>
+</html>
