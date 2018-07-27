@@ -26,6 +26,8 @@
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
+      var flightPlanCoordinates=[];
+       var i=0;
       var map;
       var lat=0.00;
       var lng=0.00;
@@ -47,8 +49,7 @@
 
     </script>
     <script>
-       var flightPlanCoordinates=[];
-       var i=0;
+
       $(function () {
         var socket = io();
         $('form').submit(function(){
@@ -89,7 +90,7 @@
                         });
                       flightPath.setMap(map);
                     }
-
+                    i++;
                    console.log(lat);
                    console.log(lng);
               }
