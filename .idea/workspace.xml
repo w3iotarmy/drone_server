@@ -80,8 +80,8 @@
       <file leaf-file-name="drone.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drone.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="87" column="43" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="87" selection-end-column="43" />
+            <state relative-caret-position="483">
+              <caret line="87" column="20" lean-forward="false" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -232,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532604004845</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add index file">
-      <created>1532670359767</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1532670359767</updated>
     </task>
     <task id="LOCAL-00025" summary="add index file">
       <created>1532670461833</created>
@@ -576,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532687490616</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="add index file">
+      <created>1532687586893</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1532687586893</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -705,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="87" column="43" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="87" selection-end-column="43" />
+        <state relative-caret-position="483">
+          <caret line="87" column="20" lean-forward="false" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
           <folding />
         </state>
       </provider>
