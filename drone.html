@@ -74,7 +74,10 @@
 
 
 
-                    flightPlanCoordinates.append({lat: latA, lng: lngA})
+                    //flightPlanCoordinates.push({lat: latA, lng: lngA})
+                  var flightPlanCoordinates = [
+                      {lat: 37.772, lng: -122.214}
+                    ];
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
