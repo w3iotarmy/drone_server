@@ -29,9 +29,9 @@
       var map;
       var lat=0.00;
       var lng=0.00;
-      window.setInterval(function(){
+      /*window.setInterval(function(){
           initMap()
-      }, 1000);
+      }, 1000);*/
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
@@ -50,11 +50,7 @@
       // Loop through the results array and place a marker for each
       // set of coordinates.3
       window.eqfeed_callback = function(results) {
-                    var latLng = new google.maps.LatLng(lat,lng);
-                    var marker = new google.maps.Marker({
-                    position: latLng,
-                    map: map
-                    });
+
                   }
       /*window.eqfeed_callback = function(results) {
         for (var i = 0; i < results.features.length; i++) {
@@ -84,7 +80,11 @@
               {
                    lat = obj.lat;
                    lng = obj.lng;
-
+                  var latLng = new google.maps.LatLng(lat,lng);
+                    var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map
+                    });
                    console.log(lat);
                    console.log(lng);
               }
