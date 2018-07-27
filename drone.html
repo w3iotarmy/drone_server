@@ -47,7 +47,7 @@
 
     </script>
     <script>
-       var flightPlanCoordinates=[{"lat":0.00,"lng":0.00}];
+       var flightPlanCoordinates=Object.create(null);
       $(function () {
         var socket = io();
         $('form').submit(function(){
