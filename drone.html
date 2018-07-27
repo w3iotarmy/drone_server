@@ -62,11 +62,11 @@
           if(obj.u=="eagle"){
               if(obj.action=="location")
               {
-                    lat = obj.lat;
-                    lng = obj.lng;
-                    map.panTo(new google.maps.LatLng(lat,lng));
+                    latA = obj.lat;
+                    lngA = obj.lng;
+                    map.panTo(new google.maps.LatLng(latA,lngA));
                     map.setMapTypeId('satellite');
-                    var latLng = new google.maps.LatLng(lat,lng);
+                    var latLng = new google.maps.LatLng(latA,lngA);
                     var marker = new google.maps.Marker({
                       position: latLng,
                       map: map
@@ -74,7 +74,7 @@
 
 
 
-                    flightPlanCoordinates.push({lat: lat, lng: lng})
+                    flightPlanCoordinates.append({lat: latA, lng: lngA})
                     var flightPath = new google.maps.Polyline({
                       path: flightPlanCoordinates,
                       geodesic: true,
@@ -84,8 +84,8 @@
                     });
 
                   flightPath.setMap(map);
-                   console.log(lat);
-                   console.log(lng);
+                   console.log(latA);
+                   console.log(lngA);
               }
           }
           window.scrollTo(0, document.body.scrollHeight);
