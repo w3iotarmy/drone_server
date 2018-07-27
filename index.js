@@ -7,8 +7,8 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
   //res.sendFile(__dirname + '/map.html');
 });
-app.get('/map', function(req, res){
-  res.sendFile(__dirname + '/map.html');
+app.get('/drone', function(req, res){
+  res.sendFile(__dirname + '/drone.html');
   //res.sendFile(__dirname + '/map.html');
 });
 io.on('connection', function(socket){
