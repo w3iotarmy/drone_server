@@ -33,7 +33,7 @@
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 20,
           center: new google.maps.LatLng(lat,lng),
-          mapTypeId: 'satellite'
+          mapTypeId: 'terrain'
         });
         var script = document.createElement('script');
         script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
@@ -60,6 +60,7 @@
                     lat = obj.lat;
                     lng = obj.lng;
                     map.panTo(new google.maps.LatLng(lat,lng));
+                    map.setMapTypeId('satellite');
                     var latLng = new google.maps.LatLng(lat,lng);
                     var marker = new google.maps.Marker({
                       position: latLng,
